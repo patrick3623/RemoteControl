@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="RemoteControl.jar" size="74568" download="eager" />
+    <jar href="RemoteControl.jar" size="81477" download="eager" />
   </resources>
   <jfx:javafx-desc  width="600" height="400" main-class="controller.Main"  name="RemoteControl" />
   <update check="background"/>

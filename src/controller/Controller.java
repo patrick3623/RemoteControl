@@ -1,9 +1,10 @@
 package controller;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -83,11 +84,40 @@ public class Controller {
 
     @FXML
     void searchBtnAction(ActionEvent event) throws UnknownHostException {
+//        try {
+//            Process p = Runtime.getRuntime().exec("cmd /c start cmd /k systeminfo");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
+        String resposta= "";
+        String comando = "systeminfo /FO CSV /NH";
+
         try {
-            Process p = Runtime.getRuntime().exec("cmd /c start cmd /k systeminfo");
-        } catch (IOException e) {
-            e.printStackTrace();
+
+            Scanner S = new Scanner( Runtime.getRuntime().exec(comando).getInputStream());
+            //int cont = 0;
+            while(S.hasNextLine()) {
+                resposta += S.nextLine() + "\n";
+//                String temp = S.nextLine() + "\n";
+//                if(cont == 1) {
+//                    resposta += temp;
+//                    cont--;
+//                }else {
+//                    cont++;
+//                }
+            }
+
+        } catch (IOException ex) {
+
+            ex.printStackTrace();
+
         }
+            resposta = resposta.replace("\"", "");
+            resposta = resposta.replace("   ", "");
+            String[] out = resposta.split(",");;
+            System.out.println("Hostname: " + out[0] + " System: " + out[1] + " Build: " + out[2] + " Installation Date: " + out[9] + " Last Boot: " + out[11] + " " + out[12] + " eth" + out[50] + " System RAM: " + out[26]);
+
         InetAddress ip = InetAddress.getByName(ipTxt.getText());
         byte[] bytes = ip.getAddress();
         InetAddress address = InetAddress.getByAddress(bytes);
@@ -109,7 +139,12 @@ public class Controller {
 
     @FXML
     void initialize() {
-        toolsBtn1.setTooltip(createToolTip("Remote Acess"));
+        toolsBtn1.setTooltip(createToolTip("Remote Support"));
+        toolsBtn2.setTooltip(createToolTip("Remote Access"));
+        toolsBtn3.setTooltip(createToolTip("Mesh Commander Tools"));
+        toolsBtn4.setTooltip(createToolTip("Remote System-Info"));
+        toolsBtn5.setTooltip(createToolTip("Remote Support"));
+        toolsBtn6.setTooltip(createToolTip("Remote Support"));
         cfg = new Config();
         System.out.println(cfg.getProperty("mDbUser"));
         System.out.println(cfg.getProperty("mDbPwd"));

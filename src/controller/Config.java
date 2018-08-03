@@ -8,7 +8,7 @@ public class Config
 
     public Config()
     {
-        configFile = new java.util.Properties();
+        configFile = new Properties();
         try {
             configFile.load(this.getClass().getClassLoader().
                     getResourceAsStream("./assets/config.cfg"));

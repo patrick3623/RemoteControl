@@ -20,7 +20,7 @@
    <children>
       <Button id="searchBtn" fx:id="searchBtn" layoutX="340.0" layoutY="28.0" mnemonicParsing="false" onAction="#searchBtnAction" prefWidth="79.0" text="Search PC" />
       <Label id="ipLbl" fx:id="ipLbl" layoutX="64.0" layoutY="32.0" text="IP or Hostname" />
-      <TextField id="ipTxt" fx:id="ipTxt" alignment="CENTER" layoutX="153.0" layoutY="28.0" onDragDetected="#searchBtnAction" onKeyPressed="#searchBtnAction" onMouseExited="#searchBtnAction" prefHeight="25.0" prefWidth="177.0" />
+      <TextField id="ipTxt" fx:id="ipTxt" alignment="CENTER" layoutX="153.0" layoutY="28.0" prefHeight="25.0" prefWidth="177.0" />
       <TextField id="userTxt" fx:id="userTxt" alignment="CENTER" layoutX="153.0" layoutY="65.0" prefHeight="25.0" prefWidth="177.0" />
       <Label id="userLbl" fx:id="userLbl" layoutX="122.0" layoutY="69.0" text="User" />
       <Button id="userBtn" fx:id="userBtn" layoutX="340.0" layoutY="65.0" mnemonicParsing="false" onAction="#userBtnAction" text="Search User" />
@@ -52,12 +52,12 @@
          <children>
             <AnchorPane prefHeight="117.0" prefWidth="148.0">
                <children>
-                  <Button fx:id="toolsBtn1" layoutX="12.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(/assets/imageres_5351.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
-                  <Button fx:id="toolsBtn2" disable="true" layoutX="55.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(/assets/imageres_109.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
-                  <Button fx:id="toolsBtn3" disable="true" layoutX="101.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(/assets/imageres_5374.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
-                  <Button fx:id="toolsBtn4" disable="true" layoutX="12.0" layoutY="57.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(/assets/imageres_5324.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
-                  <Button fx:id="toolsBtn5" disable="true" layoutX="55.0" layoutY="57.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(/assets/imageres_25.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
-                  <Button fx:id="toolsBtn6" disable="true" layoutX="101.0" layoutY="57.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(/assets/imageres_5351.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
+                  <Button fx:id="toolsBtn1" layoutX="12.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(./assets/imageres_5351.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
+                  <Button fx:id="toolsBtn2" layoutX="55.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(./assets/imageres_109.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
+                  <Button fx:id="toolsBtn3" layoutX="101.0" layoutY="14.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(./assets/imageres_5374.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
+                  <Button fx:id="toolsBtn4" layoutX="12.0" layoutY="57.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(./assets/imageres_5324.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
+                  <Button fx:id="toolsBtn5" layoutX="55.0" layoutY="57.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(./assets/imageres_25.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
+                  <Button fx:id="toolsBtn6" layoutX="101.0" layoutY="57.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" style="-fx-background-image: url(./assets/imageres_5351.ico_48x48.png); -fx-background-position: center; -fx-background-size: 34;" />
                </children>
             </AnchorPane>
          </children>
