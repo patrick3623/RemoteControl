@@ -4,22 +4,22 @@
 
 Java tool with remote administration features for windows environment. Using Intelij IDEA.
 
-Project
-+---.idea
-¦   +---artifacts
-+---META-INF
-+---out
-¦   +---artifacts
-¦   ¦   +---RemoteControl
-¦   +---production
-¦       +---RemoteControl
-¦           +---assets
-¦           +---controller
-¦           +---META-INF
-¦           +---view
-+---src
-    +---assets
-    +---controller
-    +---META-INF
-    +---model
+Project</ br>
++---.idea</ br>
+Â¦   +---artifacts</ br>
++---META-INF</ br>
++---out</ br>
+Â¦   +---artifacts</ br>
+Â¦   Â¦   +---RemoteControl</ br>
+Â¦   +---production</ br>
+Â¦       +---RemoteControl</ br>
+Â¦           +---assets</ br>
+Â¦           +---controller</ br>
+Â¦           +---META-INF</ br>
+Â¦           +---view</ br>
++---src</ br>
+    +---assets</ br>
+    +---controller</ br>
+    +---META-INF</ br>
+    +---model</ br>
     +---view
